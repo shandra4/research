@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container, div.mc-ip-hide[style*="background: rgb(255, 255, 255) !important"], [style*="color: rgb(0, 0, 1) !important;"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Comparison</title>
+<script src="Energy%20Comparison_files/chart.umd.min.js"></script><meta name="darkreader" content="55d696249eab426c83ea94a430cef799"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+table[class|="moz-header"] {
+    background: none;
+}
+*[style*="color: rgba(0,0,0,"],
+*[style*="color: rgba(0, 0, 0,"],
+*[style*="color:#000"],
+*[style*="color:black"],
+*[style*="color:#282828"],
+*[style*="color:#444"] {
+    color: var(--darkreader-neutral-text) !important;
+}
+*[style*="background:#fff"],
+*[style*="background-color:#fff"] {
+    background: var(--darkreader-neutral-background) !important;
+}
+*[bgcolor="#F5F5F5"],
+*[style*="background-color: #F5F5F5"] {
+    background: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+body[style*="background: rgb(255, 255, 255) !important"] *:not(a),
+.body[style*="background-color: rgb(254, 254, 254) !important"] *:not(a) {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+div[style*="www.gstatic.com/android/"] {
+    background: none !important;
+}
+*[style*="background:#f9f9f9"] {
+    background: var(--darkreader-background-f9f9f9, #1b1e1f) !important;
+}
+body.mediawiki.skin-vector #mw-page-base {
+    background-image: none !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6f8;
+    color: #333;
+    line-height: 1.5;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
+
+  /* Header */
+  .page-header { text-align: center; margin-bottom: 36px; }
+  .page-header h1 { font-size: 2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .page-header .subtitle { font-size: 0.95rem; color: #666; max-width: 700px; margin: 0 auto; }
+
+  /* Part headers */
+  .part-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 40px 0 20px; padding-bottom: 10px;
+    border-bottom: 3px solid #1a1a2e;
+  }
+  .part-header .pill {
+    background: #1a1a2e; color: #fff; font-size: 0.8rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 20px; white-space: nowrap;
+  }
+  .part-header h2 { font-size: 1.25rem; font-weight: 700; color: #1a1a2e; }
+
+  /* Chart card */
+  .chart-card {
+    background: #fff; border-radius: 12px; padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+  }
+  .chart-card h3 { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+  .chart-desc { font-size: 0.85rem; color: #555; margin-bottom: 14px; line-height: 1.45; }
+  .chart-note { font-size: 0.78rem; color: #888; font-style: italic; margin-top: 8px; }
+  .chart-wrap { position: relative; height: 320px; }
+  .chart-wrap.tall { height: 380px; }
+
+  /* Custom legend grid */
+  .legend-grid {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    margin-top: 12px; padding-top: 8px;
+    border-top: 1px solid #eee;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 0.78rem; color: #444;
+  }
+  .legend-swatch {
+    width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0;
+  }
+
+  @media print {
+    .chart-card { break-inside: avoid; page-break-inside: avoid; overflow: hidden; margin-bottom: 12px; }
+    .part-header { break-after: avoid; page-break-after: avoid; }
+    .page-header { margin-bottom: 16px; }
+    .container { padding: 10px 16px 30px; }
+  }
+
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+</head>
+<body>
+<div class="container">
+
+  <div class="page-header">
+    <h1>Energy Comparison</h1>
+    <p class="subtitle">Spain, Portugal, Italy, Angola, Mozambique, Mauritania — Sources: IEA &amp; OWID/Ember</p>
+  </div>
+
+  <!-- ===== PART A ===== -->
+  <div class="part-header">
+    <span class="pill">PART A</span>
+    <h2>Energy Mix</h2>
+  </div>
+
+  <!-- Chart 1 -->
+  <div class="chart-card">
+    <h3>1. Total Energy Supply (TES) by source (%)</h3>
+    <p class="chart-desc">Total energy supply (TES) includes all the 
+energy produced in or imported to a country, minus that which is 
+exported or stored. It represents all the energy required to supply end 
+users in the country. Some of these energy sources are used directly 
+while most are transformed into fuels or electricity for final 
+consumption.</p>
+    <div class="chart-wrap"><canvas id="chart1" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend1"><div class="legend-item"><span class="legend-swatch" style="background: rgb(136, 48, 57); --darkreader-inline-bgcolor: var(--darkreader-background-883039, #6d262e); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Coal</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(229, 110, 90); --darkreader-inline-bgcolor: var(--darkreader-background-e56e5a, #8f2817); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Oil</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(188, 142, 90); --darkreader-inline-bgcolor: var(--darkreader-background-bc8e5a, #876237); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Gas</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(0, 132, 126); --darkreader-inline-bgcolor: var(--darkreader-background-00847e, #006a65); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Nuclear</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(109, 62, 145); --darkreader-inline-bgcolor: var(--darkreader-background-6d3e91, #573274); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Hydro</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(193, 80, 101); --darkreader-inline-bgcolor: var(--darkreader-background-c15065, #8f3344); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Solar/Wind/Other</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(40, 107, 187); --darkreader-inline-bgcolor: var(--darkreader-background-286bbb, #205696); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Biofuels/Waste</div></div>
+  </div>
+
+  <!-- Chart 2 -->
+  <div class="chart-card">
+    <h3>2. Domestic Energy Production (TJ)</h3>
+    <p class="chart-desc">Energy production includes fossil fuels 
+drilled and mined, nuclear fission, and renewable power sources. 
+Bioenergy includes both modern and traditional sources.</p>
+    <div class="chart-wrap"><canvas id="chart2" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend2"><div class="legend-item"><span class="legend-swatch" style="background: rgb(136, 48, 57); --darkreader-inline-bgcolor: var(--darkreader-background-883039, #6d262e); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Coal</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(229, 110, 90); --darkreader-inline-bgcolor: var(--darkreader-background-e56e5a, #8f2817); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Oil</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(188, 142, 90); --darkreader-inline-bgcolor: var(--darkreader-background-bc8e5a, #876237); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Gas</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(0, 132, 126); --darkreader-inline-bgcolor: var(--darkreader-background-00847e, #006a65); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Nuclear</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(109, 62, 145); --darkreader-inline-bgcolor: var(--darkreader-background-6d3e91, #573274); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Hydro</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(193, 80, 101); --darkreader-inline-bgcolor: var(--darkreader-background-c15065, #8f3344); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Solar/Wind/Other</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(40, 107, 187); --darkreader-inline-bgcolor: var(--darkreader-background-286bbb, #205696); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Biofuels/Waste</div></div>
+  </div>
+
+  <!-- Chart 3 -->
+  <div class="chart-card">
+    <h3>3. Energy Imports &amp; Exports (TJ)</h3>
+    <p class="chart-desc">Imports, particularly of fossil fuels like 
+oil, natural gas and coal, make up an important part of the energy 
+supply in many countries. Countries that rely heavily on imported energy
+ may be vulnerable to supply disruption from external events such as the
+ Covid-19 pandemic and the war in Ukraine. In countries that export 
+large amounts of energy, falling energy prices can also cause major 
+economic shocks.</p>
+    <div class="chart-wrap"><canvas id="chart3" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend3"><div class="legend-item"><span class="legend-swatch" style="background: rgb(40, 107, 187); --darkreader-inline-bgcolor: var(--darkreader-background-286bbb, #205696); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Imports</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(193, 80, 101); --darkreader-inline-bgcolor: var(--darkreader-background-c15065, #8f3344); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Exports</div></div>
+    <p class="chart-note">Source: IEA. Positive = imports, negative = exports.</p>
+  </div>
+
+  <!-- Chart 4 -->
+  <div class="chart-card">
+    <h3>4. Electricity Generation by source (%)</h3>
+    <p class="chart-desc">Electricity can be generated in two main ways:
+ by harnessing the heat from burning fuels or nuclear reactions in the 
+form of steam (thermal power) or by capturing the energy of natural 
+forces such as the sun, wind or moving water.</p>
+    <div class="chart-wrap tall"><canvas id="chart4" style="display: block; box-sizing: border-box; height: 380px; width: 1020px;" width="2040" height="760"></canvas></div>
+    <div class="legend-grid" id="legend4"><div class="legend-item"><span class="legend-swatch" style="background: rgb(136, 48, 57); --darkreader-inline-bgcolor: var(--darkreader-background-883039, #6d262e); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Coal</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(229, 110, 90); --darkreader-inline-bgcolor: var(--darkreader-background-e56e5a, #8f2817); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Oil</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(188, 142, 90); --darkreader-inline-bgcolor: var(--darkreader-background-bc8e5a, #876237); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Gas</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(0, 132, 126); --darkreader-inline-bgcolor: var(--darkreader-background-00847e, #006a65); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Nuclear</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(109, 62, 145); --darkreader-inline-bgcolor: var(--darkreader-background-6d3e91, #573274); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Hydro</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(0, 41, 91); --darkreader-inline-bgcolor: var(--darkreader-background-00295b, #002149); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Wind</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(193, 80, 101); --darkreader-inline-bgcolor: var(--darkreader-background-c15065, #8f3344); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Solar</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(40, 107, 187); --darkreader-inline-bgcolor: var(--darkreader-background-286bbb, #205696); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Bioenergy</div></div>
+    <p class="chart-note">Sources — Spain, Portugal, Italy: IEA. Angola, Mozambique, Mauritania: OWID/Ember.</p>
+  </div>
+
+  <!-- Chart 5 -->
+  <div class="chart-card">
+    <h3>5. Total Final Consumption by source (%)</h3>
+    <p class="chart-desc">Total final consumption (TFC) is the energy 
+consumed by end users such as individuals and businesses to heat and 
+cool buildings, to run lights, devices, and appliances, and to power 
+vehicles, machines and factories. It also includes non-energy uses of 
+energy products, such as fossil fuels used to make chemicals.<br><br>Some
+ of the energy found in primary sources is lost when converting them to 
+useable final products, especially electricity. As a result, the 
+breakdown of final consumption can look very different from that of the 
+primary energy supply (TES). Both are needed to fully understand the 
+energy system.</p>
+    <div class="chart-wrap"><canvas id="chart5" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend5"><div class="legend-item"><span class="legend-swatch" style="background: rgb(136, 48, 57); --darkreader-inline-bgcolor: var(--darkreader-background-883039, #6d262e); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Coal</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(229, 110, 90); --darkreader-inline-bgcolor: var(--darkreader-background-e56e5a, #8f2817); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Oil</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(188, 142, 90); --darkreader-inline-bgcolor: var(--darkreader-background-bc8e5a, #876237); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Gas</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(240, 192, 90); --darkreader-inline-bgcolor: var(--darkreader-background-f0c05a, #6d4e0a); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Electricity</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(40, 107, 187); --darkreader-inline-bgcolor: var(--darkreader-background-286bbb, #205696); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Biofuels/Waste</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(153, 153, 153); --darkreader-inline-bgcolor: var(--darkreader-background-999999, #52585c); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Solar/Wind/Other + Heat</div></div>
+  </div>
+
+  <!-- Chart 6 -->
+  <div class="chart-card">
+    <h3>6. Electricity Imports &amp; Exports (TWh)</h3>
+    <p class="chart-desc">Electricity trade between countries requires 
+direct cross-border interconnection. Such connections help balance 
+supply and demand across regions.</p>
+    <div class="chart-wrap"><canvas id="chart6" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend6"><div class="legend-item"><span class="legend-swatch" style="background: rgb(40, 107, 187); --darkreader-inline-bgcolor: var(--darkreader-background-286bbb, #205696); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Imports</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(193, 80, 101); --darkreader-inline-bgcolor: var(--darkreader-background-c15065, #8f3344); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Exports</div></div>
+    <p class="chart-note">Source: IEA. Positive = imports, negative = exports. No split data for Angola &amp; Mauritania.</p>
+  </div>
+
+  <!-- ===== PART B ===== -->
+  <div class="part-header">
+    <span class="pill">PART B</span>
+    <h2>Fossil Fuel Supply &amp; Production</h2>
+  </div>
+
+  <!-- Chart 7 -->
+  <div class="chart-card">
+    <h3>7. Fossil Fuel Supply (TJ)</h3>
+    <p class="chart-desc">Fossil fuel supply combines domestic 
+production and imports, minus exports and storage changes, for oil, 
+natural gas, and coal. Oil supply includes crude and refined products. 
+Natural gas supply reflects growing use in power generation but also 
+energy security risks from import dependence. Coal supply continues to 
+serve power generation and heavy industry.</p>
+    <div class="chart-wrap"><canvas id="chart7" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend7"><div class="legend-item"><span class="legend-swatch" style="background: rgb(229, 110, 90); --darkreader-inline-bgcolor: var(--darkreader-background-e56e5a, #8f2817); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Oil</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(188, 142, 90); --darkreader-inline-bgcolor: var(--darkreader-background-bc8e5a, #876237); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Gas</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(136, 48, 57); --darkreader-inline-bgcolor: var(--darkreader-background-883039, #6d262e); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Coal</div></div>
+  </div>
+
+  <!-- Chart 8 -->
+  <div class="chart-card">
+    <h3>8. Fossil Fuel Production (TJ)</h3>
+    <p class="chart-desc">Fossil fuel production includes crude oil 
+pumped from wells and offshore platforms, natural gas extracted from 
+underground deposits, and coal mined from surface or underground 
+operations. Crude oil includes natural gas liquids (NGLs).</p>
+    <div class="chart-wrap"><canvas id="chart8" style="display: block; box-sizing: border-box; height: 320px; width: 1020px;" width="2040" height="640"></canvas></div>
+    <div class="legend-grid" id="legend8"><div class="legend-item"><span class="legend-swatch" style="background: rgb(229, 110, 90); --darkreader-inline-bgcolor: var(--darkreader-background-e56e5a, #8f2817); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Oil</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(188, 142, 90); --darkreader-inline-bgcolor: var(--darkreader-background-bc8e5a, #876237); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Gas</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(136, 48, 57); --darkreader-inline-bgcolor: var(--darkreader-background-883039, #6d262e); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Coal</div></div>
+  </div>
+
+  <!-- ===== PART C ===== -->
+  <div class="part-header">
+    <span class="pill">PART C</span>
+    <h2>Trade Evolution (Imports &amp; Exports by Commodity)</h2>
+  </div>
+
+  <div class="chart-card" style="padding: 16px 24px;">
+    <p class="chart-desc">Imports shown above zero (solid lines), 
+exports shown below zero (dashed lines). All values in TJ. Source: IEA 
+(2000–2024 EU, 2000–2023 Africa).</p>
+    <div class="legend-grid" id="legendTrade"><div class="legend-item"><span class="legend-swatch" style="background: rgb(228, 26, 28); --darkreader-inline-bgcolor: var(--darkreader-background-e41a1c, #b61516); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Spain</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(55, 126, 184); --darkreader-inline-bgcolor: var(--darkreader-background-377eb8, #2c6593); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Portugal</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(77, 175, 74); --darkreader-inline-bgcolor: var(--darkreader-background-4daf4a, #3e8c3b); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Italy</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(255, 127, 0); --darkreader-inline-bgcolor: var(--darkreader-background-ff7f00, #cc6600); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Angola</div><div class="legend-item"><span class="legend-swatch" style="background: rgb(152, 78, 163); --darkreader-inline-bgcolor: var(--darkreader-background-984ea3, #7a3e82); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span>Mozambique</div><div class="legend-item" style="margin-left: 12px; border-left: 1px solid rgb(204, 204, 204); padding-left: 12px; --darkreader-inline-border-left: var(--darkreader-border-cccccc, #3e4446);" data-darkreader-inline-border-left=""><span style="display: inline-block; width: 20px; height: 2px; background: rgb(102, 102, 102); vertical-align: middle; margin-right: 4px; --darkreader-inline-bgcolor: var(--darkreader-background-666666, #4d5356); --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></span> Imports</div><div class="legend-item"><span style="display: inline-block; width: 20px; height: 0px; border-top: 2px dashed rgb(102, 102, 102); vertical-align: middle; margin-right: 4px; --darkreader-inline-border-top: var(--darkreader-border-666666, #6a6357);" data-darkreader-inline-border-top=""></span> Exports</div></div>
+  </div>
+
+  <div class="chart-card">
+    <h3>9. Total Energy</h3>
+    <div class="chart-wrap tall"><canvas id="trade1" style="display: block; box-sizing: border-box; height: 380px; width: 1020px;" width="2040" height="760"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <h3>10. Crude Oil</h3>
+    <div class="chart-wrap tall"><canvas id="trade2" style="display: block; box-sizing: border-box; height: 380px; width: 1020px;" width="2040" height="760"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <h3>11. Gas</h3>
+    <div class="chart-wrap tall"><canvas id="trade3" style="display: block; box-sizing: border-box; height: 380px; width: 1020px;" width="2040" height="760"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <h3>12. Coal</h3>
+    <div class="chart-wrap tall"><canvas id="trade4" style="display: block; box-sizing: border-box; height: 380px; width: 1020px;" width="2040" height="760"></canvas></div>
+  </div>
+
+</div>
+
+<script>
+// ============================
+// Color palette
+// ============================
+const C = {
+  Coal: '#883039',
+  Oil: '#e56e5a',
+  Gas: '#bc8e5a',
+  Nuclear: '#00847e',
+  Hydro: '#6d3e91',
+  Wind: '#00295b',
+  Solar: '#c15065',
+  SolarWindOther: '#c15065',
+  Bioenergy: '#286bbb',
+  Biofuels: '#286bbb',
+  Electricity: '#f0c05a',
+  Other: '#999999',
+  Import: '#286bbb',
+  Export: '#c15065',
+  Energy: '#2d6a9f'
+};
+
+// ============================
+// Helpers
+// ============================
+const COUNTRIES = ['Spain', 'Portugal', 'Italy', 'Angola', 'Mozambique', 'Mauritania'];
+const IEA_YEARS = { Spain:'2024', Portugal:'2024', Italy:'2024', Angola:'2023', Mozambique:'2023', Mauritania:null };
+const ELEC_YEARS = { Spain:'2024', Portugal:'2024', Italy:'2024', Angola:'2024', Mozambique:'2024', Mauritania:'2024' };
+
+function fmtTJ(v) {
+  if (v === null || v === undefined) return 'No data';
+  const abs = Math.abs(v);
+  if (abs >= 1e6) return (v / 1e6).toFixed(2) + 'M';
+  if (abs >= 1e3) return (v / 1e3).toFixed(0) + 'K';
+  return v.toString();
+}
+
+function fmtFull(v) {
+  if (v === null || v === undefined) return 'No data available';
+  return v.toLocaleString('en-US');
+}
+
+function buildLegend(containerId, items) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = items.map(function(it) {
+    return '<div class="legend-item"><span class="legend-swatch" style="background:' + it.color + '"></span>' + it.label + '</div>';
+  }).join('');
+}
+
+// Label helper: append "(no data)" for null countries
+function countryLabel(name, data, year) {
+  if (data === null || data === undefined) return name + ' (no data)';
+  return year ? name + ' (' + year + ')' : name;
+}
+
+// Shared Chart.js defaults
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+Chart.defaults.font.size = 12;
+
+// Tooltip styling
+var tooltipStyle = {
+  backgroundColor: 'rgba(20,20,40,0.92)',
+  titleFont: { weight: 'bold', size: 13 },
+  bodyFont: { size: 12 },
+  padding: 10,
+  cornerRadius: 6,
+  displayColors: true,
+  boxPadding: 3
+};
+
+// ============================
+// CHART 1: TES by source (%)
+// ============================
+(function() {
+  var raw = {
+    Spain:      { Coal:102179, Oil:2091732, Gas:1007557, Nuclear:594898, Hydro:123864, SolarWindOther:481571, Biofuels:346366 },
+    Portugal:   { Coal:266, Oil:345349, Gas:132455, Nuclear:0, Hydro:53614, SolarWindOther:90053, Biofuels:153460 },
+    Italy:      { Coal:93554, Oil:1895412, Gas:2118834, Nuclear:0, Hydro:189901, SolarWindOther:431407, Biofuels:594345 },
+    Angola:     { Coal:0, Oil:279137, Gas:40697, Nuclear:0, Hydro:40392, SolarWindOther:1440, Biofuels:328985 },
+    Mozambique: { Coal:229, Oil:89041, Gas:41164, Nuclear:0, Hydro:59344, SolarWindOther:304, Biofuels:333324 },
+    Mauritania: null
+  };
+  var totals = { Spain:4748167, Portugal:775197, Italy:5323453, Angola:690651, Mozambique:523406, Mauritania:null };
+  var sources = ['Coal','Oil','Gas','Nuclear','Hydro','SolarWindOther','Biofuels'];
+  var labels = ['Coal','Oil','Gas','Nuclear','Hydro','Solar/Wind/Other','Biofuels/Waste'];
+  var colors = [C.Coal, C.Oil, C.Gas, C.Nuclear, C.Hydro, C.SolarWindOther, C.Biofuels];
+
+  var yLabels = COUNTRIES.map(function(c) { return countryLabel(c, raw[c], IEA_YEARS[c]); });
+  var noData = COUNTRIES.map(function(c) { return raw[c] === null; });
+
+  var datasets = sources.map(function(src, i) {
+    return {
+      label: labels[i],
+      data: COUNTRIES.map(function(c) {
+        if (raw[c] === null) return 0;
+        return +(raw[c][src] / totals[c] * 100).toFixed(1);
+      }),
+      backgroundColor: colors[i],
+      borderWidth: 0,
+      barPercentage: 0.7
+    };
+  });
+
+  new Chart(document.getElementById('chart1'), {
+    type: 'bar',
+    data: { labels: yLabels, datasets: datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, max: 100, ticks: { callback: function(v) { return v + '%'; } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              if (noData[ctx.dataIndex]) return null;
+              return ' ' + ctx.dataset.label + ': ' + ctx.raw.toFixed(1) + '%';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              if (noData[idx]) return 'No data available';
+              var c = COUNTRIES[idx];
+              return '\nTotal: ' + fmtFull(totals[c]) + ' TJ';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend1', labels.map(function(l,i) { return { label: l, color: colors[i] }; }));
+})();
+
+// ============================
+// CHART 2: Domestic Production (TJ)
+// ============================
+(function() {
+  var raw = {
+    Spain:      { Coal:0, Oil:25, Gas:813, Nuclear:594898, Hydro:123864, SolarWindOther:481571, Biofuels:347829 },
+    Portugal:   { Coal:0, Oil:0, Gas:0, Nuclear:0, Hydro:53614, SolarWindOther:90053, Biofuels:153420 },
+    Italy:      { Coal:0, Oil:195191, Gas:88937, Nuclear:0, Hydro:189901, SolarWindOther:431407, Biofuels:514877 },
+    Angola:     { Coal:0, Oil:2421656, Gas:200412, Nuclear:0, Hydro:40392, SolarWindOther:1440, Biofuels:328985 },
+    Mozambique: { Coal:397438, Oil:236201, Gas:396869, Nuclear:0, Hydro:59344, SolarWindOther:304, Biofuels:333324 },
+    Mauritania: null
+  };
+  var totals = { Spain:1549000, Portugal:297087, Italy:1420382, Angola:2992885, Mozambique:1423480, Mauritania:null };
+  var sources = ['Coal','Oil','Gas','Nuclear','Hydro','SolarWindOther','Biofuels'];
+  var labels = ['Coal','Oil','Gas','Nuclear','Hydro','Solar/Wind/Other','Biofuels/Waste'];
+  var colors = [C.Coal, C.Oil, C.Gas, C.Nuclear, C.Hydro, C.SolarWindOther, C.Biofuels];
+
+  var yLabels = COUNTRIES.map(function(c) { return countryLabel(c, raw[c], IEA_YEARS[c]); });
+  var noData = COUNTRIES.map(function(c) { return raw[c] === null; });
+
+  var datasets = sources.map(function(src, i) {
+    return {
+      label: labels[i],
+      data: COUNTRIES.map(function(c) { return raw[c] === null ? 0 : raw[c][src]; }),
+      backgroundColor: colors[i],
+      borderWidth: 0,
+      barPercentage: 0.7
+    };
+  });
+
+  new Chart(document.getElementById('chart2'), {
+    type: 'bar',
+    data: { labels: yLabels, datasets: datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, ticks: { callback: function(v) { return fmtTJ(v); } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              if (noData[ctx.dataIndex]) return null;
+              return ' ' + ctx.dataset.label + ': ' + fmtFull(ctx.raw) + ' TJ';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              if (noData[idx]) return 'No data available';
+              var c = COUNTRIES[idx];
+              return '\nTotal: ' + fmtFull(totals[c]) + ' TJ';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend2', labels.map(function(l,i) { return { label: l, color: colors[i] }; }));
+})();
+
+// ============================
+// CHART 3: Energy Imports & Exports (TJ)
+// ============================
+(function() {
+  var imp = { Spain:4929144, Portugal:842253, Italy:5530119, Angola:159835, Mozambique:114597, Mauritania:null };
+  var exp = { Spain:-1236289, Portugal:-234460, Italy:-1187696, Angola:-2457385, Mozambique:-1024051, Mauritania:null };
+  var noData = COUNTRIES.map(function(c) { return imp[c] === null; });
+  var yLabels = COUNTRIES.map(function(c) { return countryLabel(c, imp[c], IEA_YEARS[c]); });
+
+  new Chart(document.getElementById('chart3'), {
+    type: 'bar',
+    data: {
+      labels: yLabels,
+      datasets: [
+        {
+          label: 'Imports',
+          data: COUNTRIES.map(function(c) { return imp[c]; }),
+          backgroundColor: C.Import,
+          borderWidth: 0,
+          barPercentage: 0.7
+        },
+        {
+          label: 'Exports',
+          data: COUNTRIES.map(function(c) { return exp[c]; }),
+          backgroundColor: C.Export,
+          borderWidth: 0,
+          barPercentage: 0.7
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, ticks: { callback: function(v) { return fmtTJ(v); } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              var v = ctx.raw;
+              if (v === null) return null;
+              return ' ' + ctx.dataset.label + ': ' + fmtFull(Math.abs(v)) + ' TJ';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              if (noData[idx]) return 'No data available';
+              var c = COUNTRIES[idx];
+              var i = imp[c], e = exp[c];
+              var net = i + e;
+              var dir = net >= 0 ? 'net importer' : 'net exporter';
+              return '\nNet: ' + fmtFull(Math.abs(net)) + ' TJ (' + dir + ')';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend3', [
+    { label: 'Imports', color: C.Import },
+    { label: 'Exports', color: C.Export }
+  ]);
+})();
+
+// ============================
+// CHART 4: Electricity Generation (%)
+// ============================
+(function() {
+  var raw = {
+    Spain:      { Coal:1.2, Oil:3.2, Gas:18.2, Nuclear:18.9, Hydro:14.2, Wind:21.6, Solar:20.2, Bioenergy:2.4 },
+    Portugal:   { Coal:0, Oil:2.2, Gas:11.0, Nuclear:0, Hydro:36.4, Wind:28.2, Solar:13.9, Bioenergy:7.8 },
+    Italy:      { Coal:1.8, Oil:3.2, Gas:43.7, Nuclear:0, Hydro:20.2, Wind:8.2, Solar:13.3, Bioenergy:7.2 },
+    Angola:     { Coal:0, Oil:17.3, Gas:9, Nuclear:0, Hydro:70.6, Wind:0, Solar:2.8, Bioenergy:0.3 },
+    Mozambique: { Coal:0, Oil:0.8, Gas:15.8, Nuclear:0, Hydro:82.4, Wind:0, Solar:0.4, Bioenergy:0.7 },
+    Mauritania: { Coal:0, Oil:77.3, Gas:0, Nuclear:0, Hydro:10.1, Wind:4.8, Solar:7.7, Bioenergy:0 }
+  };
+  var genTotals = { Spain:287909, Portugal:51085, Italy:271000, Angola:null, Mozambique:null, Mauritania:null };
+  var sources = ['Coal','Oil','Gas','Nuclear','Hydro','Wind','Solar','Bioenergy'];
+  var colors = [C.Coal, C.Oil, C.Gas, C.Nuclear, C.Hydro, C.Wind, C.Solar, C.Bioenergy];
+
+  var yLabels = COUNTRIES.map(function(c) { return c + ' (' + ELEC_YEARS[c] + ')'; });
+
+  var datasets = sources.map(function(src, i) {
+    return {
+      label: src,
+      data: COUNTRIES.map(function(c) { return raw[c][src]; }),
+      backgroundColor: colors[i],
+      borderWidth: 0,
+      barPercentage: 0.7
+    };
+  });
+
+  new Chart(document.getElementById('chart4'), {
+    type: 'bar',
+    data: { labels: yLabels, datasets: datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, max: 100, ticks: { callback: function(v) { return v + '%'; } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label; },
+            label: function(ctx) {
+              return ' ' + ctx.dataset.label + ': ' + ctx.raw.toFixed(1) + '%';
+            },
+            afterBody: function(ctx) {
+              var c = COUNTRIES[ctx[0].dataIndex];
+              var t = genTotals[c];
+              return t ? '\nTotal generation: ' + fmtFull(t) + ' GWh' : '';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend4', sources.map(function(s,i) { return { label: s, color: colors[i] }; }));
+})();
+
+// ============================
+// CHART 5: Final Consumption (%)
+// ============================
+(function() {
+  var raw = {
+    Spain:      { Coal:28377, Oil:1723573, Gas:556807, Electricity:801622, Biofuels:266796, Other:14650 },
+    Portugal:   { Coal:208, Oil:316692, Gas:70925, Electricity:178343, Biofuels:96581, Other:8987 },
+    Italy:      { Coal:26530, Oil:1877676, Gas:1252951, Electricity:1003912, Biofuels:355770, Other:75972 },
+    Angola:     { Coal:0, Oil:253564, Gas:15583, Electricity:48761, Biofuels:237255, Other:0 },
+    Mozambique: { Coal:10, Oil:81049, Gas:5040, Electricity:43495, Biofuels:236780, Other:0 },
+    Mauritania: null
+  };
+  var totals = { Spain:3391825, Portugal:671736, Italy:4592811, Angola:555163, Mozambique:366374, Mauritania:null };
+  var sources = ['Coal','Oil','Gas','Electricity','Biofuels','Other'];
+  var labels = ['Coal','Oil','Gas','Electricity','Biofuels/Waste','Solar/Wind/Other + Heat'];
+  var colors = [C.Coal, C.Oil, C.Gas, C.Electricity, C.Biofuels, C.Other];
+  var noData = COUNTRIES.map(function(c) { return raw[c] === null; });
+  var yLabels = COUNTRIES.map(function(c) { return countryLabel(c, raw[c], IEA_YEARS[c]); });
+
+  var datasets = sources.map(function(src, i) {
+    return {
+      label: labels[i],
+      data: COUNTRIES.map(function(c) {
+        if (raw[c] === null) return 0;
+        return +(raw[c][src] / totals[c] * 100).toFixed(1);
+      }),
+      backgroundColor: colors[i],
+      borderWidth: 0,
+      barPercentage: 0.7
+    };
+  });
+
+  new Chart(document.getElementById('chart5'), {
+    type: 'bar',
+    data: { labels: yLabels, datasets: datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, max: 100, ticks: { callback: function(v) { return v + '%'; } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              if (noData[ctx.dataIndex]) return null;
+              return ' ' + ctx.dataset.label + ': ' + ctx.raw.toFixed(1) + '%';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              if (noData[idx]) return 'No data available';
+              var c = COUNTRIES[idx];
+              return '\nTotal: ' + fmtFull(totals[c]) + ' TJ';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend5', labels.map(function(l,i) { return { label: l, color: colors[i] }; }));
+})();
+
+// ============================
+// CHART 6: Electricity Trade (TWh)
+// ============================
+(function() {
+  var ELEC_IEA_YEARS = { Spain:'2024', Portugal:'2024', Italy:'2024', Angola:null, Mozambique:'2023', Mauritania:null };
+  var imp = { Spain:14.354, Portugal:14.356, Italy:55.907, Angola:null, Mozambique:7.911, Mauritania:null };
+  var exp = { Spain:-24.581, Portugal:-3.891, Italy:-4.907, Angola:null, Mozambique:-11.374, Mauritania:null };
+
+  var yLabels = COUNTRIES.map(function(c) {
+    var yr = ELEC_IEA_YEARS[c];
+    return yr ? c + ' (' + yr + ')' : c + ' (no data)';
+  });
+
+  new Chart(document.getElementById('chart6'), {
+    type: 'bar',
+    data: {
+      labels: yLabels,
+      datasets: [
+        {
+          label: 'Imports',
+          data: COUNTRIES.map(function(c) { return imp[c]; }),
+          backgroundColor: C.Import,
+          borderWidth: 0,
+          barPercentage: 0.7
+        },
+        {
+          label: 'Exports',
+          data: COUNTRIES.map(function(c) { return exp[c]; }),
+          backgroundColor: C.Export,
+          borderWidth: 0,
+          barPercentage: 0.7
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, grid: { color: '#eee' }, ticks: { callback: function(v) { return v + ' TWh'; } } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              var v = ctx.raw;
+              if (v === null) return null;
+              var dir = ctx.dataset.label;
+              return ' ' + dir + ': ' + Math.abs(v).toFixed(2) + ' TWh';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              var c = COUNTRIES[idx];
+              var i = imp[c], e = exp[c];
+              if (i === null) return 'No IEA data available';
+              var net = i + e;
+              var dir = net >= 0 ? 'net importer' : 'net exporter';
+              return '\nNet: ' + Math.abs(net).toFixed(2) + ' TWh (' + dir + ')';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend6', [
+    { label: 'Imports', color: C.Import },
+    { label: 'Exports', color: C.Export }
+  ]);
+})();
+
+// ============================
+// CHART 7: Fossil Fuel Supply (TJ)
+// ============================
+(function() {
+  var raw = {
+    Spain:      { Oil:2091732, Gas:1007557, Coal:102179 },
+    Portugal:   { Oil:345349, Gas:132455, Coal:266 },
+    Italy:      { Oil:1895412, Gas:2118834, Coal:93554 },
+    Angola:     { Oil:279137, Gas:40697, Coal:0 },
+    Mozambique: { Oil:89041, Gas:41164, Coal:229 },
+    Mauritania: null
+  };
+  var fuels = ['Oil','Gas','Coal'];
+  var colors = [C.Oil, C.Gas, C.Coal];
+  var noData = COUNTRIES.map(function(c) { return raw[c] === null; });
+  var yLabels = COUNTRIES.map(function(c) { return countryLabel(c, raw[c], IEA_YEARS[c]); });
+
+  var datasets = fuels.map(function(f, i) {
+    return {
+      label: f,
+      data: COUNTRIES.map(function(c) { return raw[c] === null ? 0 : raw[c][f]; }),
+      backgroundColor: colors[i],
+      borderWidth: 0,
+      barPercentage: 0.7
+    };
+  });
+
+  new Chart(document.getElementById('chart7'), {
+    type: 'bar',
+    data: { labels: yLabels, datasets: datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, ticks: { callback: function(v) { return fmtTJ(v); } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              if (noData[ctx.dataIndex]) return null;
+              return ' ' + ctx.dataset.label + ': ' + fmtFull(ctx.raw) + ' TJ';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              if (noData[idx]) return 'No data available';
+              var c = COUNTRIES[idx];
+              var d = raw[c];
+              var total = d.Oil + d.Gas + d.Coal;
+              return '\nTotal fossil supply: ' + fmtFull(total) + ' TJ';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend7', fuels.map(function(f,i) { return { label: f, color: colors[i] }; }));
+})();
+
+// ============================
+// CHART 8: Fossil Fuel Production (TJ)
+// ============================
+(function() {
+  var raw = {
+    Spain:      { Oil:25, Gas:813, Coal:0 },
+    Portugal:   { Oil:0, Gas:0, Coal:0 },
+    Italy:      { Oil:195191, Gas:88937, Coal:0 },
+    Angola:     { Oil:2421656, Gas:200412, Coal:0 },
+    Mozambique: { Oil:236201, Gas:396869, Coal:397438 },
+    Mauritania: null
+  };
+  var fuels = ['Oil','Gas','Coal'];
+  var colors = [C.Oil, C.Gas, C.Coal];
+  var noData = COUNTRIES.map(function(c) { return raw[c] === null; });
+  var yLabels = COUNTRIES.map(function(c) { return countryLabel(c, raw[c], IEA_YEARS[c]); });
+
+  var datasets = fuels.map(function(f, i) {
+    return {
+      label: f,
+      data: COUNTRIES.map(function(c) { return raw[c] === null ? 0 : raw[c][f]; }),
+      backgroundColor: colors[i],
+      borderWidth: 0,
+      barPercentage: 0.7
+    };
+  });
+
+  new Chart(document.getElementById('chart8'), {
+    type: 'bar',
+    data: { labels: yLabels, datasets: datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true, ticks: { callback: function(v) { return fmtTJ(v); } }, grid: { color: '#eee' } },
+        y: { stacked: true, grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: tooltipStyle.backgroundColor,
+          titleFont: tooltipStyle.titleFont,
+          bodyFont: tooltipStyle.bodyFont,
+          padding: tooltipStyle.padding,
+          cornerRadius: tooltipStyle.cornerRadius,
+          displayColors: tooltipStyle.displayColors,
+          boxPadding: tooltipStyle.boxPadding,
+          callbacks: {
+            title: function(ctx) { return ctx[0].label.replace(' (no data)',''); },
+            label: function(ctx) {
+              if (noData[ctx.dataIndex]) return null;
+              return ' ' + ctx.dataset.label + ': ' + fmtFull(ctx.raw) + ' TJ';
+            },
+            afterBody: function(ctx) {
+              var idx = ctx[0].dataIndex;
+              if (noData[idx]) return 'No data available';
+              var c = COUNTRIES[idx];
+              var d = raw[c];
+              var total = d.Oil + d.Gas + d.Coal;
+              return '\nTotal fossil production: ' + fmtFull(total) + ' TJ';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  buildLegend('legend8', fuels.map(function(f,i) { return { label: f, color: colors[i] }; }));
+})();
+
+// ============================
+// PART C: Trade Evolution (Imports & Exports)
+// ============================
+(function() {
+  var YEARS = [];
+  for (var y = 2000; y <= 2024; y++) YEARS.push(y);
+  var n = null;
+
+  var T = {
+    Spain: {
+      energy:   { imp: [4535379,4495330,4824888,4908133,5234698,5601322,5683965,5720997,5686315,5220165,5092056,5101291,5244742,4992244,5165850,5230229,5219344,5605787,5546774,5412804,4537962,4853395,5291158,4984841,4929144],
+                  exp: [361778,306770,297735,339846,405245,409443,489534,558038,556379,603725,636542,716113,1058201,1243514,1337454,1259753,1286792,1364112,1316299,1202686,1181875,1221793,1297307,1410106,1236289] },
+      crudeOil: { imp: [2486131,2446248,2440078,2453176,2514859,2548418,2589968,2496015,2560149,2366390,2378086,2387518,2637924,2690023,2708784,2859289,2841888,2927680,2950815,2921186,2476690,2578294,2792161,2730563,2845529],
+                  exp: [n,n,n,n,n,n,n,n,n,n,n,n,102595,158567,141397,113687,145477,168810,108545,121688,133447,126395,118220,141355,108696] },
+      gas:      { imp: [647564,662635,792536,886280,1030600,1266440,1325001,1319017,1477007,1330298,1337885,1292834,1277175,1292742,1325334,1179918,1180413,1261304,1268259,1355409,1183332,1346624,1445852,1284446,1098854],
+                  exp: [n,n,n,n,n,n,n,n,1709,37396,42074,61799,101806,212462,299433,184315,145242,104927,118267,40962,42689,110034,220546,239093,106077] },
+      coal:     { imp: [558786,487295,619930,555056,621547,621037,596867,613120,524912,414566,328555,398247,542255,338142,398582,458416,338746,466907,399074,231728,123560,155025,255956,176025,113451],
+                  exp: [21203,17707,17933,21375,28072,17385,29839,53672,61451,38136,45966,38570,56744,20940,34170,29722,14441,9943,13841,41750,52427,18027,38182,92854,25816] }
+    },
+    Portugal: {
+      energy:   { imp: [998998,991422,1017101,1023954,1045381,1137182,1087879,1023989,1025794,981846,923850,936091,941922,977339,924959,1098675,1067316,1165928,1055786,1006497,864446,865073,908014,829913,842253],
+                  exp: [75421,70355,70342,82239,91765,109947,154230,113908,112260,107634,141657,143970,177775,268305,238568,323445,331809,335110,269110,238062,261030,243368,213666,195934,234460] },
+      crudeOil: { imp: [519501,563051,507627,568087,563866,575963,626920,564667,562076,484141,500838,468010,490988,583825,524405,651787,631937,661581,600381,542865,497222,466957,500620,459917,511630],
+                  exp: [n,n,n,n,n,n,n,n,n,n,n,n,n,n,6902,6347,6986,7134,4205,6164,6439,6427,5313,1609,180] },
+      gas:      { imp: [85377,94292,114162,110671,138359,162991,153306,157452,173515,178624,188613,189798,164214,159639,145474,170208,178405,227679,212503,221053,215502,207561,209033,155452,131072],
+                  exp: n },
+      coal:     { imp: [166130,124227,145426,136973,134452,135032,146241,121483,96387,127882,68213,89912,126939,105871,108728,134339,121917,142648,111658,63822,472,371,307,177,262],
+                  exp: [2243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2015,0,0,n,n] }
+    },
+    Italy: {
+      energy:   { imp: [7300977,7113006,7301199,7521174,7752117,7956691,8044942,7949446,7774003,7073298,7501076,7092408,6824348,6225554,5738737,6307859,6388893,6612218,6403269,6359869,5485335,6030467,6368273,5826067,5530119],
+                  exp: [918557,956627,921601,1030067,1106655,1267592,1204045,1346325,1271972,1157409,1284561,1176458,1296123,1066748,921808,1224172,1301342,1396980,1298716,1231389,1060458,1228312,1385094,1308086,1187696] },
+      crudeOil: { imp: [3782227,3816829,3762055,3841359,3922060,3990280,3913459,4014417,3753286,3454799,3584180,3295162,3169113,2782100,2506301,2881242,2816812,2940697,2741149,2755284,2227286,2489536,2698813,2643575,2441151],
+                  exp: [21809,25291,16566,46607,59240,67227,71413,84431,89789,96277,73296,59700,91296,60563,53723,53364,75547,69063,82485,50890,51698,50717,111070,143003,76069] },
+      gas:      { imp: [1969857,1878234,2033122,2153208,2328565,2518943,2654012,2535745,2635770,2374589,2583888,2412953,2322290,2124814,1911907,2100810,2238588,2388299,2327346,2436827,2276610,2503016,2489157,2119935,2038055],
+                  exp: [1716,2128,1782,13064,13545,13579,12652,2331,7202,4287,4834,4253,4766,7818,8127,7577,7269,9346,13390,11159,10820,52926,158212,89822,21231] },
+      coal:     { imp: [553811,568038,552871,613044,709693,692184,702038,684660,680371,511967,586163,624531,644683,552360,549603,526717,459039,401681,371427,275802,207203,232578,327741,201546,101248],
+                  exp: [3658,2374,3712,4785,7076,6641,6380,6234,6931,8004,8913,7992,8835,7134,9926,10980,10846,9806,10445,8399,8778,7566,9911,7213,10772] }
+    },
+    Angola: {
+      energy:   { imp: [21524,26382,27295,50467,44901,26942,52024,70360,107552,143853,145258,154359,199046,204542,242523,226571,182485,148517,142350,136497,93532,124800,141631,159835,n],
+                  exp: [1608735,1489967,1820048,1793937,2038158,2604288,2953090,3588186,3992167,3820098,3688316,3339400,3582420,3617183,3485316,3697426,3573568,3411184,3106627,3046361,2873451,2505584,2496256,2457385,n] },
+      crudeOil: { imp: n,
+                  exp: [1584802,1469086,1797938,1771008,2013597,2569180,2903974,3545564,3952772,3788324,3656364,3303402,3564715,3568092,3436645,3656834,3502518,3194981,2879927,2822632,2616606,2310218,2318834,2274166,n] },
+      gas:      { imp: n,
+                  exp: [n,n,n,n,n,n,n,n,n,n,n,n,n,17783,14706,n,31122,169631,182286,188099,212724,162791,143640,159714,n] },
+      coal:     n
+    },
+    Mozambique: {
+      energy:   { imp: [31967,43187,41289,55987,61553,58924,64223,66810,62011,65224,69395,79323,73365,86529,92666,91993,99724,99597,100817,99546,87156,106814,118182,114597,n],
+                  exp: [32777,40253,44389,37921,87731,123985,142538,142322,147618,150040,157570,158324,192475,241629,275825,281873,421152,639066,593897,470703,368011,455160,639643,1024051,n] },
+      crudeOil: { imp: n,
+                  exp: [n,n,n,n,548,885,1054,1054,1180,1138,1264,384,384,384,384,427,469,387,359,313,264,255,17406,228944,n] },
+      gas:      { imp: n,
+                  exp: [n,n,n,n,46970,77450,91858,92781,102793,99870,109464,112341,121833,128222,137025,139381,141144,143018,143106,139704,136422,135849,203140,355705,n] },
+      coal:     { imp: n,
+                  exp: [399,699,1099,924,424,74,1024,374,699,699,699,3349,35193,80470,101688,100445,237378,459625,415375,291911,189886,278777,371228,397120,n] }
+    }
+  };
+
+  var CC = { Spain:'#e41a1c', Portugal:'#377eb8', Italy:'#4daf4a', Angola:'#ff7f00', Mozambique:'#984ea3' };
+  var commodities = ['energy', 'crudeOil', 'gas', 'coal'];
+  var chartIds = ['trade1', 'trade2', 'trade3', 'trade4'];
+  var cNames = ['Spain', 'Portugal', 'Italy', 'Angola', 'Mozambique'];
+  var nullRow = YEARS.map(function() { return null; });
+
+  commodities.forEach(function(commodity, ci) {
+    var datasets = [];
+
+    cNames.forEach(function(country) {
+      var cData = T[country][commodity];
+      var impData, expData;
+
+      if (!cData) {
+        impData = nullRow;
+        expData = nullRow;
+      } else {
+        impData = Array.isArray(cData.imp) ? cData.imp : nullRow;
+        expData = Array.isArray(cData.exp) ? cData.exp.map(function(v) { return v !== null ? -v : null; }) : nullRow;
+      }
+
+      var allImpNull = impData.every(function(v) { return v === null; });
+      var allExpNull = expData.every(function(v) { return v === null; });
+
+      if (!allImpNull) {
+        datasets.push({
+          label: country + ' Imp',
+          data: impData,
+          borderColor: CC[country],
+          backgroundColor: 'transparent',
+          borderWidth: 2.5,
+          pointRadius: 0,
+          pointHoverRadius: 5,
+          pointHoverBackgroundColor: CC[country],
+          tension: 0.25,
+          fill: false,
+          spanGaps: false
+        });
+      }
+
+      if (!allExpNull) {
+        datasets.push({
+          label: country + ' Exp',
+          data: expData,
+          borderColor: CC[country],
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          borderDash: [6, 3],
+          pointRadius: 0,
+          pointHoverRadius: 5,
+          pointHoverBackgroundColor: CC[country],
+          tension: 0.25,
+          fill: false,
+          spanGaps: false
+        });
+      }
+    });
+
+    new Chart(document.getElementById(chartIds[ci]), {
+      type: 'line',
+      data: { labels: YEARS, datasets: datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        scales: {
+          x: { grid: { color: '#f0f0f0' }, ticks: { maxTicksLimit: 9, font: { size: 11 } } },
+          y: {
+            grid: {
+              color: function(ctx) { return ctx.tick && ctx.tick.value === 0 ? '#aaa' : '#f0f0f0'; }
+            },
+            ticks: {
+              callback: function(v) { return fmtTJ(v); },
+              font: { size: 11 },
+              maxTicksLimit: 8
+            }
+          }
+        },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: tooltipStyle.backgroundColor,
+            titleFont: tooltipStyle.titleFont,
+            bodyFont: tooltipStyle.bodyFont,
+            padding: tooltipStyle.padding,
+            cornerRadius: tooltipStyle.cornerRadius,
+            displayColors: true,
+            boxPadding: 3,
+            filter: function(item) { return item.raw !== null; },
+            callbacks: {
+              title: function(ctx) { return ctx[0].label; },
+              label: function(ctx) {
+                var v = ctx.raw;
+                if (v === null) return null;
+                var lbl = ctx.dataset.label;
+                var isExp = lbl.indexOf(' Exp') > -1;
+                var country = lbl.replace(/ (Imp|Exp)$/, '');
+                var dir = isExp ? 'Export' : 'Import';
+                return ' ' + country + ' ' + dir + ': ' + fmtFull(Math.abs(v)) + ' TJ';
+              }
+            }
+          }
+        }
+      }
+    });
+  });
+
+  var legendItems = cNames.map(function(c) { return { label: c, color: CC[c] }; });
+  buildLegend('legendTrade', legendItems);
+  var el = document.getElementById('legendTrade');
+  el.innerHTML += '<div class="legend-item" style="margin-left:12px;border-left:1px solid #ccc;padding-left:12px;"><span style="display:inline-block;width:20px;height:2px;background:#666;vertical-align:middle;margin-right:4px;"></span> Imports</div>';
+  el.innerHTML += '<div class="legend-item"><span style="display:inline-block;width:20px;height:0;border-top:2px dashed #666;vertical-align:middle;margin-right:4px;"></span> Exports</div>';
+})();
+</script>
+
+
+</body></html>
